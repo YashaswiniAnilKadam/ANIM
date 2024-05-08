@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+
+
+
+  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  .fullscreen-image {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://c.tenor.com/YEcp14-Vkb8AAAAC/tenor.gif'); /* Replace 'your-image.jpg' with your image URL */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .message-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:;
+    padding: 20px;
+    border-radius: 5px;
+    display: none; /* Hide initially */
+    animation: showMessage 2s forwards; /* Animation to show message */
+  }
+
+  @keyframes showMessage {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+</style>
+</head>
+<body>
+<div class="fullscreen-image">
+	
+	<div class="message-container" id="messageContainer">
+  <h1 style="color: white">THIS IS NOT ALLOWED HERE</h1>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var messageContainer = document.getElementById("messageContainer");
+  messageContainer.style.display = "block";
+
+  setTimeout(function() {
+    messageContainer.style.display = "none";
+  }, 2000); // Adjust the time as needed
+});
+</script>
+</div>
+
+</body>
+</html>
